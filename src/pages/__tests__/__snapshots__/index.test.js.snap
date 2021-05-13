@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <div
+    className="sc-bdnxRM kGtXFS"
+  >
+    <h1>
+      Busca de CEP
+    </h1>
+  </div>,
+  <div
+    className="sc-gtsrHT jsIzZx"
+  >
+    <h2>
+      Consulta de CEP
+    </h2>
+    <div>
+      <input
+        name="find"
+        onChange={[Function]}
+        placeholder="Digite seu CEP"
+        type="text"
+        value=""
+      />
+      <button
+        onClick={[Function]}
+      >
+        OK
+      </button>
+    </div>
+  </div>,
+  <div
+    className="sc-hKFxyN ppiEE"
+  >
+    <div
+      className="address-response"
+    >
+      <div>
+        <label
+          htmlFor="city"
+        >
+          Cidade:
+        </label>
+        <input
+          className="input-city"
+          disabled={true}
+          id="city"
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="uf"
+        >
+          UF:
+        </label>
+        <input
+          className="input-uf"
+          disabled={true}
+          id="uf"
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="street"
+        >
+          Logradouro:
+        </label>
+        <input
+          className="input-street"
+          disabled={true}
+          id="street"
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="neighborhood"
+        >
+          Bairro:
+        </label>
+        <input
+          className="input-neighborhood"
+          disabled={true}
+          id="neighborhood"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="sc-dlnjwi hILstj"
+      >
+        <button
+          onClick={[Function]}
+        >
+          CLEAR
+        </button>
+      </div>
+    </div>
+  </div>,
+]
+`;
