@@ -1,13 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { render } from '@testing-library/react';
-import '@testing-library/jest-dom';
-import '@testing-library/jest-dom/extend-expect';
 
-import Index from './index';
+import React from "react"
+import ReactDOM from "react-dom"
+import App from "./App"
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  render(<Index />);
-  expect(div).toBeInTheDocument();
-});
+jest.mock("react-dom", () => ({ render: jest.fn() }))
+
+test("renders with App and root div", () => {
+
+  const root = document.createElement("div")
+  root.id = "root"
+  document.body.appendChild(root)
+
+  require("./index.js")
+
+  expect(ReactDOM.render).toHaveBeenCalledWith(<App />, root)
+})
